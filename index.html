@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad #2 - Andres Felipe Sosa Yepes</title>
+    <link rel="stylesheet" href="Css/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="bg-white py-4 px-6 flex justify-between items-center">
+      <div class="text-xl font-bold">Crispy Kitchen</div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#" class="text-red-400">Home</a>
+        <a href="#" class="text-gray-500 hover:text-red-400">Story</a>
+        <a href="#menu" class="text-gray-500 hover:text-red-400">Menu</a>
+        <a href="#Updates" class="text-gray-500 hover:text-red-400">Our Updates</a>
+        <a href="#Contact" class="text-gray-500 hover:text-red-400">Contact</a>
+      </div>
+      <button
+        class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
+      >
+        Reservation
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <div>
+      <section
+        class="relative h-screen bg-cover bg-center"
+        style="background-image: url('assets/Background.jpg')"
+      >
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <div
+          class="container mx-auto px-6 relative z-10 flex items-center h-full"
+        >
+          <div class="w-full md:w-1/2 ml-4">
+            <h1 class="text-white text-5xl md:text-6xl font-bold mb-8">
+              Delicious <br />
+              Steaks
+            </h1>
+
+            <div class="flex items-center mb-2">
+              <span class="text-white text-xl mr-2 font-bold">4.4/5</span>
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <p class="text-white text-lg">
+              From
+              <span class="text-white font-bold"> 1,206+ </span>
+              Customer Reviews
+            </p>
+          </div>
+
+          <div class="hidden md:block w-1/2">
+            <div class="rounded-lg overflow-hidden relative mx-auto max-w-md">
+              <img
+                src="assets/HeroImg.jpg"
+                alt="Steak"
+                class="w-full h-80 object-cover"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+              ></div>
+
+              <div class="absolute bottom-0 left-0 p-4 w-full">
+                <div class="flex items-center text-white">
+                  <h3 class="text-xl font-semibold mr-2">Steak</h3>
+                  <span
+                    class="text-yellow-500 font-bold bg-white rounded-full px-2 py-2"
+                    >$26.50</span
+                  >
+                </div>
+                <div class="flex items-center mt-2">
+                  <span class="text-white mr-2 font-bold">3.8/5</span>
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 right-0 flex">
+                <button class="bg-yellow-500 p-2 text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 5H5M5 5v10M5 5l14 14"
+                    />
+                  </svg>
+                </button>
+
+                <button class="bg-red-500 p-2 text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 5h10M19 5v10M19 5L5 19"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Special Menus -->
+    <div class="bg-[#f1f1f1] py-12" id="menu" >
+      <div class="max-w-6xl mx-auto py-12 px-4">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-center">Special Menus</h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-14">
+          
+          <!-- Morning Fresh -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="assets/Breakfast.png"
+              class="w-full"
+              alt="Morning Fresh"
+            />
+            <div class="p-4">
+              <div class="flex items-center">
+                <h3 class="text-lg font-bold">Morning Fresh</h3>
+                <span
+                  class="bg-white border border-gray-300 px-3 py-1 rounded-full text-sm font-bold shadow-md ml-2 text-yellow-500 py-2"
+                >
+                  $12.50
+                </span>
+              </div>
+
+              <p class="text-gray-600 text-sm mt-2">
+                <div class="flex text-yellow-400 flex items-center">
+                  <span class="font-bold text-black mr-2">4.3/5</span>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span class="text-gray-400 ml-2"> 102 Reviews </span>
+                </div>
+              </p>
+            </div>
+          </div>
+
+          <!-- Tooplate Soup -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img src="assets/Lunch.png" class="w-full" alt="Morning Fresh" />
+            <div class="p-4">
+              <div class="flex items-center">
+                <h3 class="text-lg font-bold">Tooplate Soup</h3>
+                <span
+                  class="bg-white border border-gray-300 px-3 py-1 rounded-full text-sm font-bold shadow-md ml-2 text-yellow-500 py-2"
+                >
+                  $24.50
+                </span>
+              </div>
+
+              <p class="text-gray-600 text-sm mt-2">
+                
+                <div class="flex text-yellow-400 flex items-center">
+                  <span class="font-bold text-black mr-2">3/5</span>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span class="text-gray-400 ml-2"> 50 Reviews </span>
+                </div>
+              </p>
+            </div>
+          </div>
+
+          <!--  Premium Steak -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img src="assets/Dinner.png" class="w-full" alt="Morning Fresh" />
+            <div class="p-4">
+              <div class="flex items-center">
+                <h3 class="text-lg font-bold">Premium Steak</h3>
+                <span
+                  class="bg-white border border-gray-300 px-3 py-1 rounded-full text-sm font-bold shadow-md ml-2 text-yellow-500 py-2"
+                >
+                  $45
+                </span>
+              </div>
+
+              <p class="text-gray-600 text-sm line-through">$150</p>
+
+              <p class="text-gray-600 text-sm mt-2">
+                <div class="flex text-yellow-400 flex items-center">
+                  <span class="font-bold text-black mr-2">3/5</span>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span class="text-gray-400 ml-2"> 86 Reviews </span>
+                </div>
+              </p>
+            </div>
+          </div>
+         
+
+            <!--  Seafood Set -->
+            <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img src="assets/DinnerSeafood.png" class="w-full" alt="Morning Fresh" />
+            <div class="p-4">
+              <div class="flex items-center">
+                <h3 class="text-lg font-bold">Seafood Set</h3>
+                <span
+                  class="bg-white border border-gray-300 px-3 py-1 rounded-full text-sm font-bold shadow-md ml-2 text-yellow-500 mr-2 py-2"
+                >
+                  $86
+                </span>
+                <p class="text-gray-600 text-sm line-through">$124</p>
+              </div>
+
+
+              <p class="text-gray-600 text-sm mt-2">
+                <div class="flex text-yellow-400 flex items-center">
+                  <span class="font-bold text-black mr-2">3/5</span>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span class="text-gray-400 ml-2"> 44 Reviews </span>
+                </div>
+              </p>
+            </div>
+          </div>
+
+           
+           <!-- Burger Set -->
+           <div
+           class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+         >
+           <img
+             src="assets/BreakfastBurger.png"
+             class="w-full"
+             alt="Morning Fresh"
+           />
+           <div class="p-4">
+             <div class="flex items-center">
+               <h3 class="text-lg font-bold">Burger Set</h3>
+               <span
+                 class="bg-white border border-gray-300 px-3 py-1 rounded-full text-sm font-bold shadow-md ml-2 text-yellow-500 py-2"
+               >
+                 $20.50
+               </span>
+             </div>
+
+             <p class="text-gray-600 text-sm mt-2">
+               
+              <div class="flex text-yellow-400 flex items-center">
+                <span class="font-bold text-black mr-2">4.3/5</span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span class="text-gray-400 ml-2"> 102 Reviews </span>
+              </div>
+             </p>
+           </div>
+         </div>
+          
+          <!-- Healthy Soup  -->
+          <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+        >
+          <img
+            src="assets/LunchSoup.png"
+            class="w-full"
+            alt="Morning Fresh"
+          />
+          <div class="p-4">
+            <div class="flex items-center">
+              <h3 class="text-lg font-bold">Healthy Soup</h3>
+              <span
+                class="bg-white border border-gray-300 px-3 py-1 rounded-full text-sm font-bold shadow-md ml-2 text-yellow-500 py-2"
+              >
+                $34.20
+              </span>
+            </div>
+
+            <p class="text-gray-600 text-sm mt-2">
+              <div class="flex text-yellow-400 flex items-center">
+                <span class="font-bold text-black mr-2">3/5</span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span class="text-gray-400 ml-2"> 64 Reviews </span>
+              </div>
+            </p>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Image -->
+    <div class="bg-[#f1f1f1]">
+      <div class="overflow-hidden">
+        <img
+          src="assets/SectionImg.png"
+          alt="Section Image"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- News & Events -->
+    <div class="bg-[#f1f1f1] py-12" id="Updates" >
+      <div class="max-w-6xl mx-auto py-12 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">News & Events</h2>
+
+        <div class="container mx-auto px-4 py-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Healthy Lifestyle -->
+            <div class="relative rounded-lg overflow-hidden shadow-md h-64  hover:shadow-xl transition-shadow duration-300 ">
+              <img
+                src="assets/HealthyLifestyle.jpg"
+                alt="Healthy lifestyle"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+              ></div>
+
+              <div class="absolute inset-0 flex flex-col justify-end p-4">
+                <span class="bg-red-500 text-white text-sm font-medium px-3 py-1 rounded w-max">Featured</span>
+                <h3 class="text-white text-xl font-bold">Healthy Lifestyle and happy living tips</h3>
+              </div>
+
+            </div>
+
+            <!-- How to make a healthy meal -->
+            <div class="relative rounded-lg overflow-hidden shadow-md h-64  hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="assets/healthymeal.jpg"
+                alt="Healthy meal"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+              ></div>
+
+              <div class="absolute inset-0 flex flex-col justify-end p-4">
+                <span class="bg-red-500 text-white text-sm font-medium px-3 py-1 rounded  w-max">Featured</span>
+                <h3 class="text-white text-xl font-bold">How to make a healthy meal</h3>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Is Coconut good for you? -->
+            <div class="hover:shadow-xl transition-shadow duration-300">
+                <img src="assets/Cocout.jpg" alt="Coconut" class="w-full rounded-lg">
+                <div class="mt-4 ml-2">
+                    <span class="bg-cyan-500 text-white text-xs font-bold px-2 py-1">Promotions</span>
+                    <span class="text-gray-700 text-sm ml-2 font-bold">8 April 2022</span>
+                </div>
+                <h3 class="text-lg font-semibold mt-2 ml-2">Is Coconut good for you?</h3>
+            </div>
+        
+            <!-- Salmon Steak Noodle -->
+            <div class="hover:shadow-xl transition-shadow duration-300 ">
+                <img src="assets/Salmon.png" alt="Salmon" class="w-full rounded-lg">
+                <div class="mt-4 ml-2">
+                    <span class="bg-black text-white text-xs font-bold px-2 py-1">News</span>
+                </div>
+                <h3 class="text-lg font-semibold mt-2 ml-2">Salmon Steak Noodle</h3>
+            </div>
+        
+            <!-- Making a healthy salad -->
+            <div class="hover:shadow-xl transition-shadow duration-300">
+                <img src="assets/healthysalad.png" alt="Salad" class="w-full rounded-lg">
+                <div class="mt-4 ml-2">
+                    <span class="bg-cyan-500 text-white text-xs font-bold px-2 py-1">Meeting</span>
+                    <span class="text-gray-700 text-sm ml-2 font-bold">30 April 2022</span>
+                </div>
+                <h3 class="text-lg font-semibold mt-2 ml-2">Making a healthy salad</h3>
+            </div>
+        </div>
+    
+      </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="relative bg-black text-white py-12" id="Contact" >
+      <div class="absolute inset-0">
+        <img src="assets/Bar.jpg" alt="Background" class="w-full h-full object-cover opacity-20" />
+      </div>
+      
+      <div class="relative container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+          
+          <!-- Contact info -->
+          <div>
+            <h2 class="text-2xl font-bold mb-10">Crispy Kitchen</h2>
+            <h3 class="text-lg font-semibold mb-4">Location</h3>
+            <p class="text-gray-300 mb-3">
+              121 Einstein Loop N, Bronx, NY 10475, United <br /> States
+            </p>
+            <button class="mt-4 bg-gray-900 hover:bg-gray-800 px-4 py-2 rounded">Directions</button>
+          </div>
+    
+          <!-- schedule -->
+          <div>
+            <h3 class="text-lg font-semibold mt-14">Opening Hours</h3>
+            <p class="text-gray-300 mt-2">Monday - Friday</p>
+            <p class="text-gray-300 mt-2">10:00 AM - 08:00 PM</p>
+            <p class="text-gray-300 mt-2">Tel: 010-02-0340</p>
+          </div>
+    
+          <!-- social media -->
+          <div>
+            <h3 class="text-lg font-semibold mt-14">Social</h3>
+            <div class="flex justify-center md:justify-start gap-4 mt-7">
+              <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+               
+             <!-- Copyright -->
+             <div class="text-gray-400 mt-9">
+               <p>Copyright © 2022 Crispy Kitchen Co., Ltd.</p>
+               <p>Design: Tooplate</p>
+             </div>
+          
+          </div>
+         
+          
+
+        </div>
+    
+       
+        
+      </div>
+
+    </footer>
+    
+
+  </body>
+</html>
